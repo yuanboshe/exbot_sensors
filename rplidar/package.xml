@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package>
+  <name>rplidar</name>
+  <version>0.0.0</version>
+  <description>The rplidar package by ExBot</description>
+  
+  <license>BSD</license>
+  <url type="website">http://blog.exbot.net</url>
+  <author email="yuanboshe@126.com">Yuanbo She</author>
+  <maintainer email="yuanboshe@126.com">Yuanbo She</maintainer>
+  
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+</package>
