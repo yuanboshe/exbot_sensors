@@ -17,7 +17,7 @@ RPlidar
 ----------
 ###Bulid & Config
 
-1. Download rplidar sdk from http://rplidar.robopeak.com/download.html , and unzip it into your *home/user* folder, e.g. *~/rplidar_sdk_v1.4.1* .
+1. Ask RoboPeak for RPlidar SDK, and put it into your *home/user* folder, e.g. *~/rplidar_sdk_v1.4.1* .
 
 2. Open a terminal, and type the following commands to build rplidar lib:
 

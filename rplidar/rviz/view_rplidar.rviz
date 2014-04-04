@@ -3,7 +3,8 @@ Panels:
     Help Height: 78
     Name: Displays
     Property Tree Widget:
-      Expanded: ~
+      Expanded:
+        - /RPlidarLaserScan1
       Splitter Ratio: 0.5
     Tree Height: 615
   - Class: rviz/Selection
@@ -24,7 +25,7 @@ Panels:
     Experimental: false
     Name: Time
     SyncMode: 0
-    SyncSource: RPlidarLaserScan
+    SyncSource: ""
 Visualization Manager:
   Class: ""
   Displays:
@@ -69,7 +70,7 @@ Visualization Manager:
       Queue Size: 10
       Selectable: true
       Size (Pixels): 3
-      Size (m): 0.01
+      Size (m): 0.04
       Style: Flat Squares
       Topic: /scan
       Use Fixed Frame: true
