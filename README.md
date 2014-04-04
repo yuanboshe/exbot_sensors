@@ -3,7 +3,7 @@ exbot_sensors
 
 Contains a variety of sensors' drivers maintained by ExBot
 
-Gendral
+General
 ---------
 
 To touch exbot_sensors, you need:
