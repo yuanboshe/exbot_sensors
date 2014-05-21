@@ -4,7 +4,7 @@
  *
  * Software License Agreement (BSD License)
  *
- * Copyright (c) 2014, ExBot & RoboPeak.
+ * Copyright (c) 2014, by ExBot.
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -55,8 +55,8 @@ int main(int argc, char **argv)
 
   // ros init
   ros::init(argc, argv, "exbot_rplidar");
-  ros::NodeHandle node;
-  scanPub = node.advertise<sensor_msgs::LaserScan>("scan", 50);
+  ros::NodeHandle node("~");
+  scanPub = node.advertise<sensor_msgs::LaserScan>("/scan", 50);
   signal(SIGINT, shutdown);
 
   // params
@@ -66,6 +66,7 @@ int main(int argc, char **argv)
   node.param("com_baudrate", com_baudrate, 115200);
   std::string frame_id; // frame_id for display in ros
   node.param<std::string>("frame_id", frame_id, "laser_frame");
+  ROS_INFO("frame_id: %s", frame_id.c_str());
   double range_min; // the data value < range_min will be dropped
   node.param("range_min", range_min, 0.0);
   double range_max; // the data value > range_max will be dropped
@@ -136,7 +137,7 @@ int main(int argc, char **argv)
       }
 
       scanPub.publish(scan_msg);
-      ROS_INFO("Pub scan data count: %d", count);
+      ROS_INFO("Pub scan data count: %lu", count);
     }
   }
 

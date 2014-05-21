@@ -6,7 +6,7 @@ find_package(catkin REQUIRED COMPONENTS sensor_msgs roscpp)
 catkin_package()
 
 # If your rplidar sdk path has been changed, please modify the following path.
-set(RPLIDAR_DIR /home/exbot/rplidar_sdk_v1.4.1/sdk)
+set(RPLIDAR_DIR /home/exbot/rplidar_sdk_v1.4.2/sdk)
 set(RPLIDAR_LIB ${RPLIDAR_DIR}/output/Linux/Release/librplidar_sdk.a)
 set(RPLIDAR_INCLUDE ${RPLIDAR_DIR}/sdk/include)
 
